@@ -21,20 +21,4 @@ ax.tick_params(labelsize = 14)
 plt.show()
 
 
-plt.style.use('seaborn-v0_8')
-
-x_values = [1,2,3,4,5]
-y_values = [1,4,9,16,25] 
-
-fig2,ax2, = plt.subplots()
-
-ax2.scatter(x_values,y_values, s=200)
-
-ax2.set_title('Square Numbers', fontsize = 24)
-ax2.set_xlabel('Value', fontsize= 14)
-ax2.set_ylabel('Square', fontsize=14)
-
-ax2.tick_params(labelsize=14)
-
-plt.show()
 

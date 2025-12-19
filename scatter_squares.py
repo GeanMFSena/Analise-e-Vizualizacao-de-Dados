@@ -25,7 +25,13 @@ y_values = [x**2 for x in x_values]
 
 fig, ax = plt.subplots()
 
-ax.scatter(x_values,y_values, s=10)
+'''
+para colocar cores em gradiente nos utilizamos o c= para passar os valores que queremos colocar no mapeamente de cores e o cmap para mapear os valores e colocar a cor desejada
+
+o s= é o tamanho da linha ou dos pontos do grafico
+
+'''
+ax.scatter(x_values,y_values,c= y_values,cmap=plt.cm.Blues, s=10)
 
 # Define um titulo para o grafico
 ax.set_title('Square Numbers', fontsize = 24)
@@ -45,8 +51,10 @@ o _ pode substituir a virgula e o ponto
 
 '''
 
-ax.axis(0,1100,0,1_100_000)
+ax.axis([0,1100,0,1_100_000])
+ax.ticklabel_format(style='plain')
 
 
 # exibe os graficos do codigo 
 plt.show()
+# plt.savefig('squares_plot.png', bbox_inches = 'tight')

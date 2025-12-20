@@ -9,15 +9,13 @@ while True:
 
     # plt.style.use('seaborn-v0_8')
     plt.style.use('classic')
-    fig,ax = plt.subplots()
+    fig,ax = plt.subplots(figsize =(10,6), dpi=124)
     
     point_numbers = range(rw.num_points)    
 
     ax.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap= plt.cm.Blues ,edgecolors='none', s=1)
     # ax.scatter(0,0, c='green',edgecolors='none', s=100)
     # ax.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors='none', s=100)
-    
-    
     
     # remove os eixos 
     ax.get_xaxis().set_visible(False)
@@ -30,7 +28,6 @@ while True:
     ax.set_title('Squares', fontsize=24)
     ax.set_xlabel('Values', fontsize=14)
     ax.set_ylabel('Squares', fontsize=14)
-
 
     plt.show()
     

@@ -6,8 +6,6 @@ rw.fill_walk()
 
 fig, ax = plt.subplots()
 
-point_num = range(rw.num_points)
-
 ax.plot(rw.x_values, rw.y_values, c='green',linewidth = 5,)
 
 ax.set_title('Squares', fontsize=24)

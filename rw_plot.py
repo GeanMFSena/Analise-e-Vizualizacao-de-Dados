@@ -17,12 +17,11 @@ while True:
     # ax.scatter(0,0, c='green',edgecolors='none', s=100)
     # ax.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors='none', s=100)
     
-    # remove os eixos 
+    # remove os eixos x e y
     ax.get_xaxis().set_visible(False)
     ax.get_yaxis().set_visible(False)
     
     # isso passa para o python que queremos que o tamanho do grafico para x e y fiquem do mesmo tamanho
-
     ax.set_aspect('equal')
 
     ax.set_title('Squares', fontsize=24)

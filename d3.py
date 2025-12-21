@@ -7,9 +7,13 @@ die_3 = Die()
 
 results = []
 
-for roll in range(1000):
-    result = die_1.roll() + die_2.roll() + die_3.roll()
-    results.append(result)
+results = [die_1.roll() + die_2.roll() + die_3.roll() for roll in range(1000)]
+# results.append(result)
+# print(results)
+
+# for roll in range(1000):
+#     result = die_1.roll() + die_2.roll() + die_3.roll()
+#     results.append(result)
 # print(results)
 
 max_roll = die_1.num_sides + die_2.num_sides + die_3.num_sides

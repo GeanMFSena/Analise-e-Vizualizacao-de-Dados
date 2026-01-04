@@ -3,7 +3,7 @@ import requests
 # cria uma chamada de API e verifica resposta
 
 url = 'https://api.github.com/search/repositories'
-url += '?q=language:python+sort:stars:>10000'
+url += '?q=language:python+sort:stars+stars:>10000'
 
 header = {'accept': 'application/vnd.github.v3+json'}
 r = requests.get(url, headers=header)
